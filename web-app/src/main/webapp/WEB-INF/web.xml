@@ -6,6 +6,12 @@
     <listener>
         <listener-class>net.gnejs.osgi.FrameworkStarter</listener-class>
     </listener>
+    <listener>
+        <listener-class>net.gnejs.osgi.BundlesInstaller</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.apache.felix.http.proxy.impl.ProxyServletContextListener</listener-class>
+    </listener>
 
     <servlet>
         <servlet-name>app-servlet</servlet-name>
@@ -14,6 +20,15 @@
     <servlet-mapping>
         <servlet-name>app-servlet</servlet-name>
         <url-pattern>/app</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>osgi-proxy</servlet-name>
+        <servlet-class>org.apache.felix.http.proxy.ProxyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>osgi-proxy</servlet-name>
+        <url-pattern>/osgi/*</url-pattern>
     </servlet-mapping>
 
 
