@@ -15,7 +15,7 @@ Two servlets are registered with the `HttpService`, one to `/s1` and one to `/os
 
 ## Actual
 
-    > curl http://localhost:8080/osgi/s1
+    > curl http://localhost:8080/osgi/s2
 
     < 404 Not Found
 
