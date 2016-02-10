@@ -31,5 +31,14 @@
         <url-pattern>/osgi/*</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>drop-servlet-path</filter-name>
+        <filter-class>net.gnejs.filter.StripServletPathFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>drop-servlet-path</filter-name>
+        <servlet-name>osgi-proxy</servlet-name>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
 
 </web-app>
