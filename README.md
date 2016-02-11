@@ -24,3 +24,15 @@ Two servlets are registered with the `HttpService`, one to `/s1` and one to `/os
 
     < 200 OK
     < "Hello from bundle servlet, registered @ /osgi/s2"
+
+
+## Felix Webconsole
+
+The Felix Webconsole is also installed as a bundle. It should be available at `http://localhost:8080/osgi/system/console`.
+
+However, in order for it to show up there, it's necessary to tell the Webconsole to register the root-servlet at the
+full path:
+
+    mvn clean install jetty:run -Dfelix.webconsole.manager.root=/osgi/system/console
+
+
