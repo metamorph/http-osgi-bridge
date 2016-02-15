@@ -15,24 +15,24 @@ Two servlets are registered with the `HttpService`, one to `/s1` and one to `/os
 
 ## Actual
 
+    > curl http://localhost:8080/osgi/s1
+
+    < 200 OK
+    < "Hello from bundle servlet, registered @ /s1"
+
+
     > curl http://localhost:8080/osgi/s2
 
     < 404 Not Found
-
-
-    > curl http://localhost:8080/osgi/s2
-
-    < 200 OK
-    < "Hello from bundle servlet, registered @ /osgi/s2"
-
 
 ## Felix Webconsole
 
 The Felix Webconsole is also installed as a bundle. It should be available at `http://localhost:8080/osgi/system/console`.
 
-However, in order for it to show up there, it's necessary to tell the Webconsole to register the root-servlet at the
-full path:
+-However, in order for it to show up there, it's necessary to tell the Webconsole to register the root-servlet at the full path:-
 
-    mvn clean install jetty:run -Dfelix.webconsole.manager.root=/osgi/system/console
+-`mvn clean install jetty:run -Dfelix.webconsole.manager.root=/osgi/system/console`-
+
+This actually works now.
 
 
