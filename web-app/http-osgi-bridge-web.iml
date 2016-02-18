@@ -15,8 +15,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.http.bridge:3.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.http.base:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.felix:org.apache.felix.framework:4.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.felix:org.apache.felix.http.proxy:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.2.4.RELEASE" level="project" />
@@ -33,6 +31,10 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: de.twentyeleven.skysail:org.json-osgi:20080701" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.json:json:20080701" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:publisher:5.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:jersey-all:2.22.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:jersey-min:2.22.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.configadmin:1.8.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
   </component>
 </module>

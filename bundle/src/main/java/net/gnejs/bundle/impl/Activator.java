@@ -14,6 +14,9 @@ public class Activator implements BundleActivator {
 	private ServiceTracker<HttpService, Runnable> tracker;
 
 	public void start(final BundleContext bundleContext) throws Exception {
+
+		bundleContext.registerService(Object.class, new RestEndpoint(), null);
+
 		tracker = new ServiceTracker<HttpService, Runnable>(bundleContext, HttpService.class, null) {
 			@Override public Runnable addingService(ServiceReference<HttpService> ref) {
 				List<BundleServlet> servlets = Arrays.asList(
