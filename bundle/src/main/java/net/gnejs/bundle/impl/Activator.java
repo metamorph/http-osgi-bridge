@@ -8,6 +8,7 @@ import org.osgi.service.http.HttpService;
 import org.osgi.util.tracker.ServiceTracker;
 
 import java.util.Arrays;
+import java.util.Hashtable;
 import java.util.List;
 
 public class Activator implements BundleActivator {
@@ -16,8 +17,12 @@ public class Activator implements BundleActivator {
 
 	public void start(final BundleContext bundleContext) throws Exception {
 
-		bundleContext.registerService(ApplicationConfiguration.class, new JaxRsConfig(), null);
-		bundleContext.registerService(Object.class, new RestEndpoint(), null);
+		bundleContext.registerService(ApplicationConfiguration.class, new JaxRsConfig(), new Hashtable<String, Object>() {{
+			put("jax-rs.resource", "yes");
+		}});
+		bundleContext.registerService(Object.class, new RestEndpoint(), new Hashtable<String, Object>() {{
+			put("jax-rs.resource", "yes");
+		}});
 
 		tracker = new ServiceTracker<HttpService, Runnable>(bundleContext, HttpService.class, null) {
 			@Override public Runnable addingService(ServiceReference<HttpService> ref) {
