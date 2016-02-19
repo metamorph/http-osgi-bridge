@@ -1,5 +1,6 @@
 package net.gnejs.bundle.impl;
 
+import com.eclipsesource.jaxrs.publisher.ApplicationConfiguration;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -15,6 +16,7 @@ public class Activator implements BundleActivator {
 
 	public void start(final BundleContext bundleContext) throws Exception {
 
+		bundleContext.registerService(ApplicationConfiguration.class, new JaxRsConfig(), null);
 		bundleContext.registerService(Object.class, new RestEndpoint(), null);
 
 		tracker = new ServiceTracker<HttpService, Runnable>(bundleContext, HttpService.class, null) {
