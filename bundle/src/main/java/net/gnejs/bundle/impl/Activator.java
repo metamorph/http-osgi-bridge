@@ -37,6 +37,9 @@ public class Activator implements BundleActivator {
 			}
 		};
 		tracker.open();
+
+		// Register a service-endpoint
+		bundleContext.registerService(Object.class, new RestEndpoint(), null);
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
