@@ -64,6 +64,30 @@
             <classifier>all</classifier>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.eclipsesource.jaxrs</groupId>
+            <artifactId>jersey-min</artifactId>
+            <version>2.22.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eclipsesource.jaxrs</groupId>
+            <artifactId>publisher</artifactId>
+            <version>5.3.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eclipsesource.jaxrs</groupId>
+            <artifactId>provider-gson</artifactId>
+            <version>2.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <resources>

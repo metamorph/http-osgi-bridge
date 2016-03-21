@@ -11,6 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target/http-osgi-bridge-web-1.0-SNAPSHOT" />
       <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
       <excludeFolder url="file://$MODULE_DIR$/target/maven-status" />
+      <excludeFolder url="file://$MODULE_DIR$/target/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -29,6 +30,11 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.compendium:4.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.configadmin:1.8.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.webconsole:all:4.2.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:jersey-min:2.22.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:publisher:5.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:jersey-all:2.22.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.eclipsesource.jaxrs:provider-gson:2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
   </component>
 </module>
