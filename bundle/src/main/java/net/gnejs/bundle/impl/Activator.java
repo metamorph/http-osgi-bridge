@@ -1,5 +1,6 @@
 package net.gnejs.bundle.impl;
 
+import com.eclipsesource.jaxrs.publisher.ApplicationConfiguration;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -39,7 +40,8 @@ public class Activator implements BundleActivator {
 		tracker.open();
 
 		// Register a service-endpoint
-		bundleContext.registerService(Object.class, new RestEndpoint(), null);
+		bundleContext.registerService(new String[]{Object.class.getName(), ApplicationConfiguration.class.getName()},
+				new RestEndpoint(), null);
 	}
 
 	public void stop(BundleContext bundleContext) throws Exception {
