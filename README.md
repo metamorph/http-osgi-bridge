@@ -1,3 +1,6 @@
+
+> This setup actually works (using Servlet Bridge / Proxy 2.3.2).
+
 # Hackish sample app for Felix Osgi/Servlet Bridge
 
 `mvn install` from root - then `cd web-app` and then `mvn jetty:run`
