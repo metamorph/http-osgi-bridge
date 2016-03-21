@@ -10,7 +10,7 @@
         <listener-class>net.gnejs.osgi.BundlesInstaller</listener-class>
     </listener>
     <listener>
-        <listener-class>org.apache.felix.http.proxy.impl.ProxyServletContextListener</listener-class>
+        <listener-class>org.apache.felix.http.proxy.ProxyListener</listener-class>
     </listener>
 
     <servlet>
